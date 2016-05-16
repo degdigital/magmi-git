@@ -163,7 +163,7 @@ class CategoryImporter extends Magmi_ItemProcessor
         $odefs = array();
         $clist = array();
         foreach ($cdefs as $cdef) {
-            $parts = explode("::", $cdef);
+            $parts = explode("||", $cdef);
             $cp = count($parts);
             $cname = trim($parts[0]);
             $odefs[] = $cname;
